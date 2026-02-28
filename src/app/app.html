@@ -1,14 +1,5 @@
 <div class="app">
   <h1>My {{ title() }}</h1>
-  <ul>
-    @for (recipe of recipes(); track recipe.id) {
-      <li>
-        {{ recipe.name }}
-        @if (recipe.isFavorite) {
-          <span class="text-red-500">★</span>
-        }
-      </li>
-    }
-  </ul>
   <hr/>
+  <app-recipe-list/>
 </div>

@@ -1,0 +1,15 @@
+<div class="recipe-list">
+  <h1>Recipe List</h1>
+  <div>
+    <ul>
+      @for (recipe of recipes(); track recipe.id) {
+        <li>
+          <strong> {{ recipe.name }} </strong> - {{ recipe.description }}
+          @if (recipe.isFavorite) {
+            <span class="text-red-500">★</span>
+          }
+        </li>
+      }
+    </ul>
+  </div>
+</div>

@@ -5,7 +5,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
     id: 1,
     name: 'Spaghetti Bolognese',
     description: 'A classic Italian pasta dish with rich meat sauce.',
-    imageUrl: 'https://example.com/spaghetti.jpg',
+    imgUrl: 'https://example.com/spaghetti.jpg',
     isFavorite: false,
     ingredients: [
       { name: 'Spaghetti', quantity: 200, unit: 'g' },
@@ -19,7 +19,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
     id: 2,
     name: 'Chicken Curry',
     description: 'A flavorful curry dish with tender chicken pieces.',
-    imageUrl: 'https://example.com/chicken-curry.jpg',
+    imgUrl: 'https://example.com/chicken-curry.jpg',
     isFavorite: true,
     ingredients: [
       { name: 'Chicken Breast', quantity: 500, unit: 'g' },

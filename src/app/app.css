@@ -12,13 +12,3 @@
 h1 {
   color: navy;
 }
-
-ul {
-  list-style-type: square;
-  padding: 5px;
-  text-align: left;
-}
-
-ul li {
-  margin: 0 10px;
-}

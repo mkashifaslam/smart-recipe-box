@@ -1,0 +1,16 @@
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: square;
+  padding: 5px;
+  text-align: left;
+}
+
+ul li {
+  margin: 0 10px;
+}
