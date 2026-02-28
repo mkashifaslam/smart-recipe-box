@@ -3,11 +3,10 @@
   <div>
     <ul>
       @for (recipe of recipes(); track recipe.id) {
-        <li>
-          <strong> {{ recipe.name }} </strong> - {{ recipe.description }}
-          @if (recipe.isFavorite) {
-            <span class="text-red-500">★</span>
-          }
+        <li class="recipe-item">
+          <a href="#">{{ recipe.name }}</a>
+          <br/>
+          <p>{{ recipe.description }}</p>
         </li>
       }
     </ul>
