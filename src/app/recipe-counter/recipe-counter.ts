@@ -8,10 +8,6 @@ import { Component, computed, signal } from '@angular/core';
 })
 export class RecipeCounter {
   count = signal<number>(2);
-  recipeCount = computed(
-    () =>
-      this.count() >= 5 ? 'You have a great collection!' : 'Keep adding more recipes to your collection.'
-  );
 
   addRecipe() {
     this.count.update((c) => c + 1);
@@ -20,4 +16,16 @@ export class RecipeCounter {
   removeRecipe() {
     this.count.update((c) => c - 1);
   }
+
+  motivationMessage = computed(() => {
+    if (this.count() < 3) {
+      return 'Your collection is just starting! Keep adding more recipes.';
+    } else if (this.count() < 5) {
+      return 'You have a nice collection! Keep it growing!';
+    } else if (this.count() < 10) {
+      return 'Wow, you have an amazing collection of recipes!';
+    } else {
+      return 'Wow, you have a great collection of recipes!';
+    }
+  });
 }

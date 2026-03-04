@@ -1,6 +1,9 @@
 <div class="recipe-counter">
-  <h2>Recipe Counter</h2>
-  <p class="label">Number of recipes = <span class="counter">{{ count() }}</span>, {{ recipeCount() }}</p>
+  <h1>Recipe Counter</h1>
+  <p class="label">
+    Currently, you have <span class="counter">{{ count() }}</span> {{ count() > 1 ? 'recipes' : 'recipe' }} in your
+    collection.<br/>
+    {{ motivationMessage() }}</p>
   <div class="buttons">
     <button
       class="add-recipe"
@@ -11,7 +14,7 @@
     <button
       class="remove-recipe"
       (click)="removeRecipe()"
-      [disabled]="count() === 0"
+      [attr.disabled]="count() === 0 ? 'disabled' : null"
     >
       Remove Recipe
     </button>

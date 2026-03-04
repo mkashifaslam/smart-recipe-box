@@ -8,12 +8,18 @@
 .recipe-counter .label {
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.75;
   color: #555;
 }
 
 .recipe-counter .counter {
-  font-size: 1.5rem;
+  font-size: 1.80rem;
+  font-family: 'Arial', sans-serif;
   font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
 }
 
 .recipe-counter .buttons {
@@ -22,8 +28,8 @@
 }
 
 .recipe-counter .buttons button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.20rem;
   font-weight: bold;
   cursor: pointer;
 }
