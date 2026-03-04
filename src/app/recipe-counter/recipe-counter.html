@@ -1,0 +1,19 @@
+<div class="recipe-counter">
+  <h2>Recipe Counter</h2>
+  <p class="label">Number of recipes = <span class="counter">{{ count() }}</span>, {{ recipeCount() }}</p>
+  <div class="buttons">
+    <button
+      class="add-recipe"
+      (click)="addRecipe()"
+    >
+      Add Recipe
+    </button>
+    <button
+      class="remove-recipe"
+      (click)="removeRecipe()"
+      [disabled]="count() === 0"
+    >
+      Remove Recipe
+    </button>
+  </div>
+</div>
