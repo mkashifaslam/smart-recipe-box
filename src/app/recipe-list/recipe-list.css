@@ -1,8 +1,14 @@
-.recipe-list {
+.recipe-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
 }
 
 ul {
