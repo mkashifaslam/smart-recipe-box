@@ -3,10 +3,8 @@
   <div class="recipe-list">
     <ul>
       @for (recipe of recipes(); track recipe.id) {
-        <li class="recipe-item">
-          <a href="#">{{ recipe.name }}</a>
-          <br/>
-          <p>{{ recipe.description }}</p>
+        <li>
+          <app-recipe-card [recipe]="recipe"></app-recipe-card>
         </li>
       }
     </ul>

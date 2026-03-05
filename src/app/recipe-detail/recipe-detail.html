@@ -1,0 +1,12 @@
+<div class="recipe-detail">
+  <h2>{{ recipe().name }}</h2>
+  <p>{{ recipe().description }}</p>
+  <h3>Ingredients:</h3>
+  <ul>
+    @for (ingredient of recipe().ingredients; track ingredient.name) {
+      <li class="recipe-item">
+        {{ ingredient.name }} - {{ ingredient.quantity }} {{ ingredient.unit }}
+      </li>
+    }
+  </ul>
+</div>
