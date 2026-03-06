@@ -1,19 +1,69 @@
 .recipe-detail {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 15px 0;
+  padding: 2rem;
+  background-color: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  margin: 1.5rem auto;
+  max-width: 900px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.recipe-detail:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.recipe-detail h2 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.recipe-detail h3 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-detail p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 ul {
-  list-style-type: square;
-  padding: 5px;
+  list-style-type: none;
+  padding: 0;
   text-align: left;
+  margin-top: 0.75rem;
 }
 
 ul li.recipe-item {
-  margin: 0 10px;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+ul li.recipe-item:last-child {
+  border-bottom: none;
+}
+
+ul li.recipe-item:hover {
+  color: var(--primary-color);
+  padding-left: 2rem;
+}
+
+ul li.recipe-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
