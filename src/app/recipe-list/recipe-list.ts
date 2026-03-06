@@ -6,10 +6,8 @@ import { RecipeDetail } from '../recipe-detail/recipe-detail';
 @Component({
   selector: 'app-recipe-list',
   templateUrl: './recipe-list.html',
-  imports: [
-    RecipeDetail
-  ],
-  styleUrl: './recipe-list.css'
+  imports: [RecipeDetail],
+  styleUrl: './recipe-list.css',
 })
 export class RecipeList {
   recipes = signal<RecipeModel[]>(MOCK_RECIPES);
