@@ -60,7 +60,7 @@ ul li.recipe-item:hover {
 }
 
 ul li.recipe-item::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   left: 0;
   color: var(--success-color);

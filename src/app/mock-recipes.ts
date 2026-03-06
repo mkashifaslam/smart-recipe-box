@@ -12,8 +12,8 @@ export const MOCK_RECIPES: RecipeModel[] = [
       { name: 'Ground Beef', quantity: 300, unit: 'g' },
       { name: 'Tomato Sauce', quantity: 400, unit: 'ml' },
       { name: 'Onion', quantity: 1, unit: 'pc' },
-      { name: 'Garlic', quantity: 2, unit: 'cloves' }
-    ]
+      { name: 'Garlic', quantity: 2, unit: 'cloves' },
+    ],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
       { name: 'Curry Powder', quantity: 2, unit: 'tbsp' },
       { name: 'Coconut Milk', quantity: 400, unit: 'ml' },
       { name: 'Onion', quantity: 1, unit: 'pc' },
-      { name: 'Garlic', quantity: 3, unit: 'cloves' }
-    ]
-  }
+      { name: 'Garlic', quantity: 3, unit: 'cloves' },
+    ],
+  },
 ];

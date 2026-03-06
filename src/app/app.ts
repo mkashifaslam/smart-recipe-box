@@ -6,7 +6,7 @@ import { RecipeCounter } from './recipe-counter/recipe-counter';
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [RecipeList, RecipeCounter]
+  imports: [RecipeList, RecipeCounter],
 })
 export class App {
   protected readonly title = signal('Smart Recipe Book');
