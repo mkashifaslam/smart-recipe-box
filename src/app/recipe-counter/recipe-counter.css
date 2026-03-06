@@ -11,11 +11,30 @@
   max-width: 600px;
 }
 
+.recipe-counter .counter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
 .recipe-counter .label {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.6;
   color: var(--text-secondary);
+  letter-spacing: 0.3px;
+  margin: 0;
+  text-align: center;
+}
+
+.recipe-counter .motivation-message {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
   letter-spacing: 0.3px;
 }
 
@@ -27,10 +46,12 @@
   padding: 1rem 2rem;
   border-radius: 50px;
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
-  min-width: 120px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .recipe-counter .buttons {
@@ -78,4 +99,75 @@
 
 .recipe-counter .buttons button.remove-recipe:hover:not(:disabled) {
   background-color: var(--danger-hover);
+}
+
+/* Responsive Design - Tablet and smaller screens */
+@media (max-width: 768px) {
+  .recipe-counter {
+    padding: 1.5rem;
+    gap: 1.25rem;
+    margin: 1rem auto;
+  }
+
+  .recipe-counter .counter-section {
+    gap: 0.5rem;
+  }
+
+  .recipe-counter .label {
+    font-size: 1rem;
+  }
+
+  .recipe-counter .motivation-message {
+    font-size: 0.9rem;
+  }
+
+  .recipe-counter .counter {
+    font-size: 3rem;
+    width: 110px;
+    height: 110px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .recipe-counter .buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive Design - Mobile phones */
+@media (max-width: 480px) {
+  .recipe-counter {
+    padding: 1.25rem;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .recipe-counter .counter-section {
+    gap: 0.25rem;
+  }
+
+  .recipe-counter .label {
+    font-size: 0.95rem;
+  }
+
+  .recipe-counter .motivation-message {
+    font-size: 0.85rem;
+  }
+
+  .recipe-counter .counter {
+    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+    padding: 0.5rem 1rem;
+  }
+
+  .recipe-counter .buttons {
+    gap: 0.75rem;
+  }
+
+  .recipe-counter .buttons button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
 }

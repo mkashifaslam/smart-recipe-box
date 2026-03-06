@@ -1,10 +1,11 @@
 <div class="recipe-counter">
   <h1>Recipe Counter</h1>
-  <p class="label">
-    Currently, you have <span class="counter">{{ count() }}</span>
-    {{ count() > 1 ? 'recipes' : 'recipe' }} in your collection.<br />
-    {{ motivationMessage() }}
-  </p>
+  <div class="counter-section">
+    <p class="label">Currently, you have</p>
+    <span class="counter">{{ count() }}</span>
+    <p class="label">{{ count() > 1 ? 'recipes' : 'recipe' }} in your collection.</p>
+  </div>
+  <p class="motivation-message">{{ motivationMessage() }}</p>
   <div class="buttons">
     <button class="add-recipe" (click)="addRecipe()">Add Recipe</button>
     <button
